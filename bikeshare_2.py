@@ -19,20 +19,20 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = input(
-        "Would you like to see data for Chicago, New York City, or Washington?").strip().lower()
+        "Please type in the city name (Chicago, New York City, or Washington)").strip().lower()
     while city not in ['chicago', 'new york city', 'washington']:
-        city = input('please insert a valid value!').strip().lower()
+        city = input('The value is not valid!').strip().lower()
 
     # TO DO: get user input for month (all, january, february, ... , june)
     month = input(
         "Which month - January, February, March, April, May, or June?(type 'all' for all months)").strip().lower()
     while month not in ['january', 'february', 'march', 'april', 'may', 'june', 'all']:
-        month = input('please insert a valid value!').strip().lower()
+        month = input('The value is not valid!').strip().lower()
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day = input("Which day - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday?(type 'all' for all days)").lower().strip()
     while day not in ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']:
-        day = input('please insert a valid value!').strip().lower()
+        day = input('The value is not valid!').strip().lower()
     print('-'*40)
     return city, month, day
 
